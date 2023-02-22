@@ -13,37 +13,55 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body class="font-Grotesk rtl:font-IBM">
+<body class="font-Grotesk rtl:font-IBM dark">
     <div class="dark:bg-darkclr bg-[#FFFAF4]">
         <!-- start DP header  -->
-        <header id="header" class=" sticky top-0 z-50">
+        <header id="header" class=" hidden  sticky top-0 z-50">
             <div class="container mx-auto">
                 <div class="flex items-center justify-between">
                     <a href="index.html" class="logo">
                         <img class="block dark:hidden" src="assets/images/logo.png" alt="logo">
                         <img class="hidden dark:block" src="assets/images/logodark.png" alt="logo">
                     </a>
-                    <div class="flex items-center">
-                        <ul class="list-none flex gap-10 py-10">
+                    <div
+                        class="md:flex md:items-center fixed  w-screen md:w-auto md:h-auto h-screen top-0 left-0 bg-[#0F141F] md:bg-transparent md:static">
+                        <ul class="list-none md:flex  gap-10 py-10">
                             <li>
-                                <a class="dark:text-white text-[#111827] font-bold	" href="#">Home</a>
+                                <a class="dark:text-white text-3xl md:text-base text-[#111827] font-bold"
+                                    href="#">Home</a>
                             </li>
                             <li>
-                                <a class="dark:text-[#9CA3AF] text-[#6B7280] font-medium" href="#">Services</a>
+                                <a class="dark:text-[#9CA3AF] text-3xl md:text-base text-[#6B7280] font-medium"
+                                    href="#">Services</a>
                             </li>
                             <li>
-                                <a class="dark:text-[#9CA3AF] text-[#6B7280] font-medium" href="#">Work</a>
+                                <a class="dark:text-[#9CA3AF] text-3xl md:text-base text-[#6B7280] font-medium"
+                                    href="#">Work</a>
                             </li>
                             <li>
-                                <a class="dark:text-[#9CA3AF] text-[#6B7280] font-medium" href="#">Pricing</a>
+                                <a class="dark:text-[#9CA3AF] text-3xl md:text-base text-[#6B7280] font-medium"
+                                    href="#">Pricing</a>
                             </li>
                             <li>
-                                <a class="dark:text-[#9CA3AF] text-[#6B7280] mr-2 font-medium" href="#">
+                                <a class="dark:text-[#9CA3AF] text-3xl md:text-base text-[#6B7280] mr-2 font-medium"
+                                    href="#">
                                     Coaching
                                     <span
                                         class="p-1.5 bg-white t-[#6B7280] rounded-lg text-[11px] dark:bg-[#374151]">SOON</span>
                                 </a>
                             </li>
+                            <div class="close absolute top-[30px] right-[30px] md:hidden">
+                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.4546 27C23.7301 27 23.0136 26.7362 22.4411 26.164L2.11485 5.84701C1.01705 4.74971 1.01705 2.92046 2.11485 1.82316C3.2129 0.725612 5.04377 0.725612 6.14182 1.82316L26.4681 22.1402C27.5619 23.2335 27.5658 25.0534 26.48 26.152C25.877 26.7091 25.1448 27 24.4546 27Z"
+                                        fill="#475569" stroke="#0F141F" stroke-width="2" />
+                                    <path
+                                        d="M3.83684 27.2915C3.11235 27.2915 2.39583 27.0277 1.82335 26.4555C0.72555 25.3582 0.725551 23.529 1.82335 22.4317L22.1496 2.11467C23.2476 1.01712 25.0785 1.01712 26.1766 2.11467C27.2744 3.21197 27.2744 5.04122 26.1766 6.13852L5.85033 26.4555C5.27784 27.0277 4.56132 27.2915 3.83684 27.2915Z"
+                                        fill="#475569" stroke="#0F141F" stroke-width="2" />
+                                </svg>
+
+                            </div>
                         </ul>
                         <div id="dark-mode-btn" class="flex items-center mx-[50px]">
                             <svg class="block dark:hidden cursor-pointer" width="22" height="22" viewBox="0 0 22 22"
@@ -67,18 +85,34 @@
                         </div>
                         <a href="index-ar.html" class="dark:text-[#9CA3AF] font-IBM text-sm">العربية</a>
                     </div>
+                    <span class="mobile-menu-btn block md:hidden">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                d="M26.9835 3.3335H13.0168C6.95016 3.3335 3.3335 6.95016 3.3335 13.0168V26.9668C3.3335 33.0502 6.95016 36.6668 13.0168 36.6668H26.9668C33.0335 36.6668 36.6502 33.0502 36.6502 26.9835V13.0168C36.6668 6.95016 33.0502 3.3335 26.9835 3.3335Z"
+                                fill="#CBD5E1" />
+                            <path
+                                d="M28.3332 13.75H11.6665C10.9832 13.75 10.4165 13.1833 10.4165 12.5C10.4165 11.8167 10.9832 11.25 11.6665 11.25H28.3332C29.0165 11.25 29.5832 11.8167 29.5832 12.5C29.5832 13.1833 29.0165 13.75 28.3332 13.75Z"
+                                fill="#CBD5E1" />
+                            <path
+                                d="M28.3332 21.25H11.6665C10.9832 21.25 10.4165 20.6833 10.4165 20C10.4165 19.3167 10.9832 18.75 11.6665 18.75H28.3332C29.0165 18.75 29.5832 19.3167 29.5832 20C29.5832 20.6833 29.0165 21.25 28.3332 21.25Z"
+                                fill="#CBD5E1" />
+                            <path
+                                d="M28.3332 28.75H11.6665C10.9832 28.75 10.4165 28.1833 10.4165 27.5C10.4165 26.8167 10.9832 26.25 11.6665 26.25H28.3332C29.0165 26.25 29.5832 26.8167 29.5832 27.5C29.5832 28.1833 29.0165 28.75 28.3332 28.75Z"
+                                fill="#CBD5E1" />
+                        </svg>
 
+                    </span>
                 </div>
             </div>
         </header>
         <!-- end DP header  -->
 
         <!-- start DP main page content  -->
-        <main>
+        <main class="px-6 md:px-0">
             <!-- start section  -->
-            <section class=" pt-[134px]">
+            <section class=" pt-[134px] ">
                 <div class="container mx-auto">
-                    <div class="text-center">
+                    <div class=" md:text-center ">
                         <div
                             class="inline-flex items-center  gap-[12px] rounded-full mx-auto bg-secondary dark:bg-[#282F40]">
                             <span
@@ -97,14 +131,16 @@
                             </span>
                         </div>
                     </div>
-                    <h1 class="mt-4">
-                        <div class="text-center text-5xl font-bold text-[#36C86F]">Cut the Guessing. Design for Results
+                    <h1 class="mt-4 ">
+                        <div class="md:text-center text-[40px]  md:text-5xl font-bold text-[#36C86F]">Cut the Guessing.
+                            Design for Results
                         </div>
-                        <div class="text-center text-5xl font-bold text-[#111827] dark:text-white">Grow Faster. Hire
+                        <div class="md:text-center text-3xl  md:text-5xl font-bold text-[#111827] dark:text-white">Grow
+                            Faster. Hire
                             Less.</div>
                     </h1>
-                    <div class="flex justify-center gap-10 mt-6">
-                        <div class="flex items-center gap-3">
+                    <div class="md:flex  justify-center gap-10 mt-6">
+                        <div class="flex items-center mb-2 md:mb-0 gap-3">
                             <span>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +154,7 @@
                             </span>
                             <span class="text-[#374151] dark:text-[#9CA3AF]">No hiring headaches</span>
                         </div>
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center mb-2 md:mb-0 gap-3">
                             <span>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +168,7 @@
                             </span>
                             <span class="text-[#374151] dark:text-[#9CA3AF]">One-flat monthly fee</span>
                         </div>
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center mb-2 md:mb-0 gap-3">
                             <span>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +184,8 @@
                         </div>
                     </div>
                     <div class="text-center mt-16 ">
-                        <button class="text-white py-6 px-12 rounded-lg font-bold bg-primary text-20 ">Get
+                        <button
+                            class="text-white py-6 px-12 md:w-auto w-full rounded-lg font-bold bg-primary text-20 ">Get
                             started</button>
                     </div>
                     <p class="mt-4 text-center text-[#6B7280] text-xs">Zero hassle, limitless design</p>
@@ -307,17 +344,18 @@
 
             <!-- start section  -->
 
-            <section class="py-32">
+            <section class="py-32"> md:block hidden
                 <div class="container mx-auto">
-                    <h2 class="text-4xl text-center mb-4 font-bold text-[#111827]  dark:text-[#F9FAFB]">You have 2
-                        choices</h2>
-                    <p class=" text-center mb-12 text-[21px] text-[#111827] dark:text-[#9CA3AF]">Either waste time and
-                        money, or deploy proven expertise
-                        now.</p>
-                    <div class="flex items-center gap-12 px-[95px] ">
+                    <h2 class="md:text-4xl text-[32px] text-center mb-4 font-bold text-[#111827]  dark:text-[#F9FAFB]">
+                        You have 2 choices
+                    </h2>
+                    <p class=" text-center mb-12 text-lg md:text-[21px] text-[#111827] dark:text-[#9CA3AF]">
+                        Either waste time and money, or deploy proven expertise  now.
+                    </p>
+                    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-12 md:px-[95px] ">
                         <div class="p-10 w-full bg-secondary dark:bg-[#131A2A] rounded-2xl">
-                            <h3 class="text-[21px] font-semibold mb-6 text-[#111827] dark:text-[#F9FAFB]">Hiring the
-                                right designers can be a nightmare
+                            <h3 class="text-[21px] font-semibold mb-6 text-[#111827] dark:text-[#F9FAFB]">
+                                Hiring the right designers can be a nightmare
                             </h3>
                             <ul class="list-none">
                                 <li class="flex items-center gap-3 mb-3 text-[#374151] dark:text-[#E5E7EB]">
@@ -384,20 +422,21 @@
             <!-- start section  -->
             <section class="py-32">
                 <div class="">
-                    <h2 class="text-4xl text-center mb-4 font-bold text-[#111827]  dark:text-[#F9FAFB]">Services</h2>
-                    <p class=" text-center mb-12 text-[21px] text-[#111827] dark:text-[#9CA3AF]">For <b>one monthly</b>
+                    <h2 class="md:text-4xl text-[32px] text-center mb-4 font-bold text-[#111827]  dark:text-[#F9FAFB]">
+                        Services</h2>
+                    <p class=" text-center mb-12 text-lg md:text-[21px]  text-[#111827] dark:text-[#9CA3AF]">For <b>one
+                            monthly</b>
                         fee, you can get everything you
                         need to
                         stand out.</p>
                     <div class="overflow-x-hidden relative">
                         <div
-                            class="absolute left-0  top-0 bottom-0 w-1/3 bg-gradient-to-r from-[#FFFAF4] via-[#fffaf495] to-[#fffaf400] dark:from-[#0E131E] dark:to-[#0E131E00]">
+                            class="absolute md:block hidden left-0  top-0 bottom-0 w-1/3 bg-gradient-to-r from-[#FFFAF4] via-[#fffaf495] to-[#fffaf400] dark:from-[#0E131E] dark:to-[#0E131E00]">
                         </div>
                         <div
-                            class="absolute right-0 top-0 bottom-0 rotate-180 w-1/3 bg-gradient-to-r from-[#FFFAF4] via-[#fffaf4a3] to-[#fffaf400]  dark:from-[#0E131E] dark:to-[#0E131E00] ">
+                            class="absolute md:block hidden right-0 top-0 bottom-0 rotate-180 w-1/3 bg-gradient-to-r from-[#FFFAF4] via-[#fffaf4a3] to-[#fffaf400]  dark:from-[#0E131E] dark:to-[#0E131E00] ">
                         </div>
-                        <div class=" flex gap-[30px] justify-center -mx-60 my-[30px]">
-
+                        <div class=" flex flex-col md:flex-row gap-3 md:gap-[30px] justify-center md:-mx-60 md:my-[30px] my-4">
                             <div
                                 class="service-card p-4 flex gap-4  items-center w-[350px] bg-secondary rounded-3xl dark:bg-[#0F172A]">
                                 <div class="">
@@ -504,7 +543,7 @@
 
 
 
-                        <div class=" flex gap-[30px] justify-center -mx-60 my-[30px] ">
+                        <div class=" flex flex-col md:flex-row gap-3 md:gap-[30px] justify-center md:-mx-60 md:my-[30px]  ">
                             <div
                                 class="service-card p-4 flex gap-4  items-center w-[350px] bg-secondary rounded-3xl dark:bg-[#0F172A]	">
                                 <div class="">
@@ -567,7 +606,6 @@
                                 </div>
 
                             </div>
-
                             <div
                                 class="service-card p-4 flex gap-4  items-center w-[350px] bg-secondary rounded-3xl dark:bg-[#0F172A]	">
                                 <div class="">
@@ -648,7 +686,7 @@
                         </div>
 
 
-                        <div class=" flex gap-[30px] justify-center -mx-60 my-[30px]">
+                        <div class=" flex flex-col md:flex-row gap-3 md:gap-[30px] justify-center md:-mx-60 md:my-[30px] ">
 
                             <div
                                 class="service-card p-4 flex gap-4  items-center w-[350px] bg-secondary rounded-3xl dark:bg-[#0F172A]	">
@@ -768,19 +806,20 @@
             <!-- start section  -->
             <section class="py-32">
                 <div class="container mx-auto">
-                    <div class="flex gap-14">
-                        <div class="w-1/3">
-                            <h2 class="text-4xl text-center mb-4 font-bold text-[#111827]  dark:text-[#F9FAFB]">Deliver
-                                with Confidence, Cut
-                                Off Uncertainty
+                    <div class="md:flex gap-14">
+                        <div class="md:w-1/3">
+                            <h2
+                                class="md:text-4xl text-[32px] md:text-center mb-4 font-bold text-[#111827]  dark:text-[#F9FAFB]">
+                                Deliver with Confidence, Cut Off Uncertainty
                             </h2>
-                            <p class=" text-center mb-12 text-[21px] text-[#111827] dark:text-[#9CA3AF]">Our clients
+                            <p class=" md:text-center mb-12 text-lg md:text-[21px]  text-[#111827] dark:text-[#9CA3AF]">Our
+                                clients
                                 seen a <span class="text-[#34D399]">+37%</span> increase in feature
                                 delivery.</p>
                         </div>
-                        <div class="w-2/3 flex flex-col gap-12">
-                            <div class="flex ">
-                                <div class="pr-6 w-1/2">
+                        <div class="md:w-2/3 flex flex-col gap-6 md:gap-12">
+                            <div class="md:flex ">
+                                <div class="md:pr-6 md:w-1/2 mb-6 md:mb-0">
                                     <svg width="33" height="19" viewBox="0 0 33 19" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -793,7 +832,7 @@
                                         everything you need to design the best
                                         user experience possible.</p>
                                 </div>
-                                <div class="pl-6 w-1/2">
+                                <div class="md:pl-6 md:w-1/2 ">
                                     <svg width="33" height="19" viewBox="0 0 33 19" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -808,8 +847,8 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex ">
-                                <div class="pr-6 w-1/2">
+                            <div class="md:flex ">
+                                <div class="md:pr-6 md:w-1/2 mb-6 md:mb-0">
                                     <svg width="33" height="34" viewBox="0 0 33 34" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -824,7 +863,7 @@
                                         of
                                         portfolios and endless negotiations.</p>
                                 </div>
-                                <div class="pl-6 w-1/2">
+                                <div class="md:pl-6 md:w-1/2 ">
                                     <svg width="33" height="38" viewBox="0 0 33 38" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -850,11 +889,12 @@
             <!-- start section  -->
             <section class="py-32">
                 <div class="container mx-auto">
-                    <h2 class="text-4xl text-center mb-4 font-bold text-[#111827] dark:text-[#F9FAFB]">Testimonials</h2>
-                    <p class=" text-center mb-16 text-[21px] text-[#111827] dark:text-[#9CA3AF]">
+                    <h2 class="md:text-4xl text-[32px] text-center mb-4 font-bold text-[#111827] dark:text-[#F9FAFB]">
+                        Testimonials</h2>
+                    <p class=" text-center mb-16 text-lg md:text-[21px]  text-[#111827] dark:text-[#9CA3AF]">
                         We don’t settle for less than a perfect experience.
                     </p>
-                    <div class="flex gap-[30px]">
+                    <div class="flex flex-col md:flex-row gap-6 md:gap-[30px]">
                         <div class="bg-secondary dark:bg-[#131A2B] p-8 rounded-2xl">
                             <svg width="43" height="47" viewBox="0 0 43 47" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -946,13 +986,13 @@
             <!-- start section  -->
             <section class="py-32">
                 <div class="container mx-auto">
-                    <h2 class="text-4xl text-center mb-4 font-bold text-[#111827]  dark:text-[#F9FAFB]">
+                    <h2 class="md:text-4xl text-[32px] text-center mb-4 font-bold text-[#111827]  dark:text-[#F9FAFB]">
                         Simple, transparent pricing
                     </h2>
-                    <p class=" text-center mb-16 text-[21px] text-[#111827] dark:text-[#9CA3AF]">
+                    <p class=" text-center mb-16 text-lg md:text-[21px]  text-[#111827] dark:text-[#9CA3AF]">
                         Best in class products everytime.
                     </p>
-                    <div class="flex gap-[30px]">
+                    <div class="flex flex-col md:flex-row gap-0 md:gap-[30px]">
                         <div class="w-full">
                             <div
                                 class="p-8 flex rounded-2xl bg-white dark:bg-[#131A2A] flex-col items-start gap-4 dark:border  dark:border-gray-800 shadow-shadow-1">
@@ -1083,13 +1123,13 @@
                         </div>
                     </div>
                     <div
-                        class="mt-12 shadow-shadow-1 bg-white dark:bg-[#131A2A] dark:border dark:border-gray-800 flex items-center justify-between px-8 pt-8 pb-6 rounded-2xl">
+                        class="mt-12 shadow-shadow-1 bg-white dark:bg-[#131A2A] dark:border dark:border-gray-800 md:flex items-center justify-between px-8 pt-8 pb-6 rounded-2xl">
                         <div class="">
                             <h6 class="text-2xl	 font-semibold text-[#101828] dark:text-[#F9FAFB]">One-off Project</h6>
                             <p class=" text-[#475467] sark:text-[#9CA3AF]">Fixed budget, timeline and scope.</p>
                         </div>
                         <button
-                            class="py-3 px-5 border border-[#D0D5DD] dark:border-gray-300 dark:bg-white font-semibold rounded-lg text-[#344054] ">
+                            class="py-3 px-5 border mt-6 md:mt-0 w-full md:w-auto border-[#D0D5DD] dark:border-gray-300 dark:bg-white font-semibold rounded-lg text-[#344054] ">
                             Book 15mins call
                         </button>
                     </div>
@@ -1099,13 +1139,13 @@
             <!-- start section  -->
             <section class="pb-32">
                 <div class="container mx-auto">
-                    <h2 class="text-4xl text-center mb-12 font-bold text-[#111827]  dark:text-[#F9FAFB]">
+                    <h2 class="md:text-4xl text-[32px] text-center mb-12 font-bold text-[#111827]  dark:text-[#F9FAFB]">
                         FAQs
                     </h2>
                     <div class=" flex flex-col gap-8">
-                        <div class="flex gap-8">
+                        <div class="flex flex-col md:flex-row gap-4 md:gap-8">
                             <div class="flex-1">
-                                <h6 class="font-semibold  text-[#101828] dark:text-[#E5E7EB]">How does your pricing
+                                <h6 class="font-semibold text-[#101828] mb-2 dark:text-[#E5E7EB]">How does your pricing
                                     work?</h6>
                                 <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
                                     You only pay a fixed price once a month for our services. No
@@ -1114,7 +1154,7 @@
                                 </p>
                             </div>
                             <div class="flex-1">
-                                <h6 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">How do I send you my
+                                <h6 class="font-semibold text-[#101828] mb-2 dark:text-[#E5E7EB]">How do I send you my
                                     requests?</h6>
                                 <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
                                     Our process starts with you putting your requests on a Trello board, which our team
@@ -1123,7 +1163,7 @@
                                 </p>
                             </div>
                             <div class="flex-1">
-                                <h6 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">How many revisions can I
+                                <h6 class="font-semibold text-[#101828] mb-2 dark:text-[#E5E7EB]">How many revisions can I
                                     get?</h6>
                                 <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
                                     DesignPeer offers unlimited revisions, so you can request as many revisions as
@@ -1131,9 +1171,9 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="flex gap-8">
+                        <div class="flex flex-col md:flex-row gap-4 md:gap-8">
                             <div class="flex-1">
-                                <h6 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">How long does it take to
+                                <h6 class="font-semibold text-[#101828] mb-2 dark:text-[#E5E7EB]">How long does it take to
                                     complete a request?</h6>
                                 <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
                                     The turnaround time for a project will depend on the scope of work and the number of
@@ -1141,7 +1181,7 @@
                                 </p>
                             </div>
                             <div class="flex-1">
-                                <h6 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">How does your pricing work?
+                                <h6 class="font-semibold text-[#101828] mb-2 dark:text-[#E5E7EB]">How does your pricing work?
                                 </h6>
                                 <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
                                     You only pay a fixed price once a month for our services. No
@@ -1150,7 +1190,7 @@
                                 </p>
                             </div>
                             <div class="flex-1">
-                                <h6 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">Do you work with startups?
+                                <h6 class="font-semibold text-[#101828] mb-2 dark:text-[#E5E7EB]">Do you work with startups?
                                 </h6>
                                 <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
                                     Yes, we work mainly with startups that aim to prosper in their industries. We are
@@ -1158,9 +1198,9 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="flex gap-8">
+                        <div class="flex flex-col md:flex-row gap-4 md:gap-8">
                             <div class="flex-1">
-                                <h6 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">How do you handle feedback
+                                <h6 class="font-semibold text-[#101828] mb-2 dark:text-[#E5E7EB]">How do you handle feedback
                                     and changes to a project?</h6>
                                 <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
                                     We welcome revisions and changes to a project and will work with you to ensure that
@@ -1168,7 +1208,7 @@
                                 </p>
                             </div>
                             <div class="flex-1">
-                                <h6 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">How do you ensure the
+                                <h6 class="font-semibold text-[#101828] mb-2 dark:text-[#E5E7EB]">How do you ensure the
                                     confidentiality of my project?</h6>
                                 <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
                                     We understand the importance of confidentiality in product design and development.
@@ -1177,7 +1217,7 @@
                                 </p>
                             </div>
                             <div class="flex-1">
-                                <h6 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">Do I have to sign a
+                                <h6 class="font-semibold text-[#101828] mb-2 dark:text-[#E5E7EB]">Do I have to sign a
                                     long-term contract?</h6>
                                 <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
                                     No, you subscribe to a monthly subscription so you don’t have to be restricted with
@@ -1186,7 +1226,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-12 flex items-center justify-between">
+                    <div class="mt-12 md:flex items-center justify-between">
                         <div class="">
                             <h6 class="font-semibold mb-2 text-[#101828] dark:text-[#E5E7EB]">Still have questions?</h6>
                             <p class="text-sm text-[#475467] dark:text-[ ]">Can’t find the answer you’re looking for?
@@ -1194,7 +1234,7 @@
                                 team.</p>
                         </div>
                         <button
-                            class="rounded-lg border border-gray-300 dark:border-gray-800 dark:text-[#9CA3AF] py-3 px-5 bg-white dark:bg-transparent">Get
+                            class="rounded-lg border mt-6 md:mt-0 border-gray-300 dark:border-gray-800 dark:text-[#9CA3AF] py-3 px-5 bg-white dark:bg-transparent">Get
                             in touch</button>
                     </div>
 
@@ -1209,7 +1249,8 @@
                 <div class="py-16 flex items-center justify-between gap-10 border-b border-b-gray-300">
                     <div class="">
                         <h4 class="text-4xl	mb-3 text-[#111827] dark:text-[#F9FAFB]">Get your product 10x better!</h4>
-                        <p class="text-[21px] text-[#6B7280] dark:text-[#9CA3AF]">Let’s discuss how we can take your
+                        <p class="text-lg md:text-[21px]  text-[#6B7280] dark:text-[#9CA3AF]">Let’s discuss how we can
+                            take your
                             product to the next level!</p>
 
                     </div>
