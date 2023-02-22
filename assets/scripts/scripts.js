@@ -50,8 +50,10 @@ function sticky() {
 
 document.querySelector(".menu-close-btn").addEventListener("click", () => {
   document.querySelector(".mobile-menu").classList.toggle("hidden");
+  document.querySelector(".mobile-menu").classList.toggle("flex");
 })
 document.querySelector(".mobile-menu-btn ").addEventListener("click", () => {
   document.querySelector(".mobile-menu").classList.toggle("hidden");
+  document.querySelector(".mobile-menu").classList.toggle("flex");
 
 })

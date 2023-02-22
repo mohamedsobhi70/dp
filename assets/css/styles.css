@@ -1664,6 +1664,12 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px){
+  .sm\:flex{
+    display: flex;
+  }
+}
+
 @media (min-width: 768px){
   .md\:static{
     position: static;
