@@ -7,7 +7,7 @@ darkBtn.addEventListener("click", function () {
 var swiper = new Swiper(".swiper-1", {
   spaceBetween: 30,
   breakpoints: {
-   10: {
+    10: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
@@ -87,4 +87,12 @@ document.querySelector(".mobile-menu-btn ").addEventListener("click", () => {
   document.querySelector(".mobile-menu").classList.toggle("hidden");
   document.querySelector(".mobile-menu").classList.toggle("flex");
 
+})
+
+
+window.addEventListener("scroll", () => {
+  let val = window.scrollY;
+  document.querySelector(".paralex-element-1").style.left = val * .10 + "px";
+  document.querySelector(".paralex-element-2").style.right = val * .10 + "px";
+  document.querySelector(".paralex-element-3").style.left = val * .10 + "px";
 })
