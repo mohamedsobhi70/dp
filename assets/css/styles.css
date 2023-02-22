@@ -784,6 +784,14 @@ video {
   margin-top: 0px;
 }
 
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.ml-3{
+  margin-left: 0.75rem;
+}
+
 .block{
   display: block;
 }
@@ -1312,6 +1320,10 @@ video {
   text-align: center;
 }
 
+.text-right{
+  text-align: right;
+}
+
 .font-Grotesk{
   font-family: Grotesk;
 }
@@ -1522,6 +1534,30 @@ video {
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+[dir="ltr"] .ltr\:mr-2{
+  margin-right: 0.5rem;
+}
+
+[dir="ltr"] .ltr\:ml-2{
+  margin-left: 0.5rem;
+}
+
+[dir="ltr"] .ltr\:mr-3{
+  margin-right: 0.75rem;
+}
+
+[dir="rtl"] .rtl\:ml-2{
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .rtl\:mr-2{
+  margin-right: 0.5rem;
+}
+
+[dir="rtl"] .rtl\:ml-3{
+  margin-left: 0.75rem;
 }
 
 [dir="rtl"] .rtl\:font-IBM{
@@ -1837,6 +1873,10 @@ video {
     text-align: center;
   }
 
+  .md\:text-right{
+    text-align: right;
+  }
+
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1864,5 +1904,21 @@ video {
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  [dir="ltr"] .ltr\:md\:pl-6{
+    padding-left: 1.5rem;
+  }
+
+  [dir="ltr"] .ltr\:md\:pr-6{
+    padding-right: 1.5rem;
+  }
+
+  [dir="rtl"] .rtl\:md\:pl-6{
+    padding-left: 1.5rem;
+  }
+
+  [dir="rtl"] .rtl\:md\:pr-6{
+    padding-right: 1.5rem;
   }
 }
