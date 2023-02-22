@@ -90,10 +90,11 @@ document.querySelector(".mobile-menu-btn ").addEventListener("click", () => {
 
 })
 
-
-window.addEventListener("scroll", () => {
+if (window.screen.width >768) {
+  window.addEventListener("scroll", () => {
   let val = window.scrollY;
   document.querySelector(".paralex-element-1").style.left = val * .10 + "px";
   document.querySelector(".paralex-element-2").style.right = val * .10 + "px";
   document.querySelector(".paralex-element-3").style.left = val * .10 + "px";
 })
+}
