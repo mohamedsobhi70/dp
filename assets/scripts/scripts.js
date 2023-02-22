@@ -47,3 +47,13 @@ function sticky() {
     document.getElementById('header').style.borderBottom = "none";
   }
 }
+
+document.querySelector(".menu-close-btn").addEventListener("click", () => {
+  document.querySelector(".mobile-menu").classList.toggle("translate-x-full");
+  document.querySelector(".mobile-menu").classList.toggle("left-0");
+})
+document.querySelector(".mobile-menu-btn ").addEventListener("click", () => {
+  document.querySelector(".mobile-menu").classList.toggle("translate-x-full");
+  document.querySelector(".mobile-menu").classList.toggle("left-0");
+
+})
