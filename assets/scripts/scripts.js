@@ -1,3 +1,4 @@
+AOS.init();
 let darkBtn = document.getElementById("dark-mode-btn");
 darkBtn.addEventListener("click", function () {
   document.body.classList.toggle("dark");
