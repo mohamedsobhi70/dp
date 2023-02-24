@@ -72,23 +72,26 @@ $('.carousel-2').owlCarousel({
 
 function sticky() {
   if (window.scrollY > 1) {
-    document.getElementById('header').style.backdropFilter = "blur(2.5px)"
+    document.getElementById('header').style.backdropFilter = "blur(2.5px)";
+    document.querySelector('.header-container ').classList.remove("py-10");
+    document.querySelector('.header-container ').classList.add("py-6");
+
+
     if (document.body.classList.contains("dark")) {
       document.getElementById('header').style.background = "#111827E0";
-      document.getElementById('header').style.borderBottom = "1px solid #374151";
 
     }
     else {
       document.getElementById('header').style.background = "rgba(255,255,255,0.8)";
-      document.getElementById('header').style.borderBottom = "1px solid rgb(210 210 210)";
+      document.querySelector('.header-container ').classList.remove("py-10");
 
     }
   }
   else {
     document.getElementById('header').style.background = "none"
-
+    document.querySelector('.header-container ').classList.add("py-10");
+    document.querySelector('.header-container ').classList.remove("py-6");
     document.getElementById('header').style.backdropFilter = "none"
-    document.getElementById('header').style.borderBottom = "none";
   }
 }
 
@@ -102,20 +105,19 @@ document.querySelector(".mobile-menu-btn ").addEventListener("click", () => {
 
 })
 
-if (window.screen.width > 768) {
-  window.addEventListener("scroll", () => {
-    let val = window.scrollY;
-    document.querySelector(".paralex-element-1").style.left = val * .10 + "px";
-    document.querySelector(".paralex-element-2").style.right = val * .10 + "px";
-    document.querySelector(".paralex-element-3").style.left = val * .10 + "px";
-  })
-}
 
 
 
 
 window.addEventListener("scroll", () => {
   sticky();
+  if (window.screen.width > 768) {
+    let val = window.scrollY;
+    document.querySelector(".paralex-element-1").style.left = val * .10 + "px";
+    document.querySelector(".paralex-element-2").style.right = val * .10 + "px";
+    document.querySelector(".paralex-element-3").style.left = val * .10 + "px";
+  }
+
   let workSec = document.getElementById("work");
   let servicesSec = document.getElementById("services");
   let pricingSec = document.getElementById("pricing");
@@ -153,5 +155,6 @@ window.addEventListener("scroll", () => {
 });
 
 
-// $(".owl-stage").append('<svg class="absolute bottom-0 left-0 dark:fill-darkclr fill-[#FFFAF4] z-10 w-full" width="100%" height="75" viewBox="0 0 1600 75" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 75H1601V30.5C1601 30.5 1167.74 0.5 798.5 0.5C453.081 0.5 0 30.5 0 30.5V75Z" /></svg>')
-// $(".owl-stage").append('<svg class="absolute top-[-37px] left-0 dark:fill-darkclr fill-[#FFFAF4] z-10 w-full" width="100%"height="85" viewBox="0 0 1600 85" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1600 0.0001297L7.43092e-06 -1.01767e-05L2.6382e-06 54.8224C2.6382e-06 54.8224 434.03 84.9999 801.993 84.9999C1146.22 85 1600 54.8225 1600 54.8225L1600 0.0001297Z" />/svg>')
+// $(".carousel-2 .owl-stage").append('<svg class="svg-mask absolute bottom-[-47px] left-0 dark:fill-darkclr fill-[#FFFAF4] z-10 " width="100%" height="75" viewBox="0 0 1600 75" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 75H1601V30.5C1601 30.5 1167.74 0.5 798.5 0.5C453.081 0.5 0 30.5 0 30.5V75Z" /></svg>')
+// $(".carousel-2 .owl-stage").append('<svg class="svg-mask absolute top-[-58px] left-0 dark:fill-darkclr fill-[#FFFAF4] z-10 " width="100%"height="85" viewBox="0 0 1600 85" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1600 0.0001297L7.43092e-06 -1.01767e-05L2.6382e-06 54.8224C2.6382e-06 54.8224 434.03 84.9999 801.993 84.9999C1146.22 85 1600 54.8225 1600 54.8225L1600 0.0001297Z" />/svg>')
+// $(".svg-mask").css("width","100% !important")
