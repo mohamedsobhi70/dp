@@ -123,9 +123,6 @@ window.addEventListener("scroll", () => {
   let workLi = document.querySelector(".nav-link a.work");
   let servicesLi = document.querySelector(".nav-link a.services");
   let pricingLi = document.querySelector(".nav-link a.pricing");
-  console.log(servicesSec.offsetTop);
-  // console.log(pricingSec.offsetTop);
-  console.log(workLi);
   if (window.scrollY > workSec.offsetTop - 200) {
     workLi.classList.add("font-bold");
     workLi.classList.remove("font-medium");
