@@ -839,6 +839,10 @@ video {
   z-index: auto;
 }
 
+.z-20{
+  z-index: 20;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1651,6 +1655,19 @@ video {
   transition-duration: 300ms;
 }
 
+.hover\:text-\[\]:hover{
+  color: ;
+}
+
+.hover\:text-\[\#\]:hover{
+  color: #;
+}
+
+.hover\:text-\[\#111827\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
 [dir="ltr"] .ltr\:ml-2{
   margin-left: 0.5rem;
 }
@@ -1845,6 +1862,11 @@ video {
 }
 
 .dark .dark\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark .dark\:hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
