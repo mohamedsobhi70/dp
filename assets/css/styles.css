@@ -989,6 +989,10 @@ video {
   height: 100vh;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .w-1\/3{
   width: 33.333333%;
 }
@@ -1039,6 +1043,10 @@ video {
 
 .w-screen{
   width: 100vw;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .flex-1{
@@ -1922,6 +1930,10 @@ video {
     height: auto;
   }
 
+  .md\:h-16{
+    height: 4rem;
+  }
+
   .md\:w-1\/3{
     width: 33.333333%;
   }
@@ -1936,6 +1948,10 @@ video {
 
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:w-16{
+    width: 4rem;
   }
 
   .md\:translate-x-0{
@@ -2060,6 +2076,11 @@ video {
   .md\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .dark .dark\:md\:bg-transparent{
